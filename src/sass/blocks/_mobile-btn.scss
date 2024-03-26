@@ -1,0 +1,50 @@
+.mobile-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 32px;
+        height: 25px;
+        padding: 0;
+        z-index: 50;
+        border: none;
+        background-color: rgb(255 255 255 / 0%);
+        &__icon {
+            width: 80%;
+            height: 3px;
+            background-color: #000000;
+            position: relative;
+            &::after, &::before {
+                @include pseudo;
+                right: 0;
+                width: 30px;
+                height: 3px;
+                background-color: #000000;
+                transition: $transit;
+            }
+            &::after {
+                top: -6px;
+            }
+            &::before {
+                top: 6px;
+            }
+        }
+        &_open {
+            .mobile-btn__icon {
+                background-color: transparent;
+                &::before {
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                    top: 0;
+                }
+            }
+        }
+    }
+}

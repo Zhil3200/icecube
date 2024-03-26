@@ -1,0 +1,35 @@
+.numbers {
+    padding: var(--padding-container);
+    background: url('../img/numbers_bg.svg') right center / cover no-repeat $deepblue-color;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        row-gap: 40px;
+    }
+    &__item {
+        padding: 0 50px;
+        width: clamp(250px, 33%, 315px);
+        flex-grow: 1;
+        &:nth-child(2) {
+            border-left: 1px solid rgba(197, 197, 197, .15);
+            border-right: 1px solid rgba(197, 197, 197, .15);
+        }
+        &-head {
+            text-align: center;
+            font-weight: 700;
+            font-size: 43px;
+            line-height: 54px; 
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        &-text {
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px; 
+            color: $lightblue-color;
+        }
+    }
+}

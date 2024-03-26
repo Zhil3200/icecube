@@ -1,0 +1,14 @@
+.footer {
+    margin-top: auto;
+    padding: 50px 0;
+    background-color: $deepblue-color;
+    &__wrapper {
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        gap: 30px
+    }
+    &__block {
+        background-color: red;
+        min-height: 200px;
+    }
+}

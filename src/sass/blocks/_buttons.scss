@@ -1,0 +1,16 @@
+.button {
+    background: linear-gradient(134deg, #fdbe1c 2.08%, #f6c209 27.68%, #ffd90f 69.27%, #deb319 100%);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    color: #884303;
+    padding: 16px;
+    width: 268px;
+    border-radius: 5px;
+    transition: $transit;
+    &:hover {
+        background: linear-gradient(134deg, #deb319 2.08%, #ffd90f 27.68%, #f6c209 69.27%, #fdbe1c 100%);
+        box-shadow: 0 4px 18px 0 #aa7a00bf;
+    }
+}

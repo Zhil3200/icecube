@@ -1,0 +1,45 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+
+:root {
+    --padding-container: 70px 0;
+    --padding-big: 150px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.container {
+    max-width: 1170px;
+    margin: $m-auto;
+    padding: 0 15px;
+}
+.no-scroll {
+	overflow-y: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/numbers';
+@import 'blocks/production';
+@import 'blocks/mobile-btn';
+@import 'blocks/footer';
+
+
+@import 'blocks/media';

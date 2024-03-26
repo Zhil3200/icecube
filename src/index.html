@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблон проекта с БЭМ</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+            <div class="container">
+                
+                <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="#">Преимущества</a></li>
+                        <li class="header__menu-item"><a href="#">Как заказать</a></li>
+                        <li class="header__menu-item"><a href="#">Цены</a></li>
+                        <li class="header__menu-item"><a href="#">Оплата и доставка</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__contacts">
+                    <div>
+                        <a href="#" class="header__message-link"><img src="icons/whatsapp.svg" alt="whatsapp" title="Написать в WhatsApp"></a>
+                        <a href="#" class="header__message-link"><img src="icons/viber.svg" alt="viber" title="Написать в Viber"></a>
+                        <a href="#" class="header__message-link"><img src="icons/telegram.svg" alt="telegram" title="Написать в Telegram"></a>
+                    </div>
+
+                    <div class="header__phone">
+                        <a href="#">+375 (29) 999-99-99</a>
+                    </div>
+
+                    <button class="header__button">Заказать звонок</button>
+                </div>
+
+                <button class="mobile-btn">
+                    <span class="mobile-btn__icon"></span>
+                </button>
+
+            </div>
+    </header>
+
+    <section class="promo">
+        <div class="container">
+           <div class="promo__wrapper">
+                <h1 class="promo__title">Профессиональный пищевой лед от производителя</h1>
+                <div class="promo__subtitle">в Минске <span>от 1,4 Br за кг.</span></div>
+                <div class="promo__text">Мы предлагаем:</div>
+                <div class="promo__items">
+                    <div class="promo__item">
+                        <img src="icons/promo-icon1.png" alt="лед из фильтрованной воды" class="promo__item-img">
+                        <div class="promo__item-descr">Лед из очищенной фильтрованной воды</div>
+                    </div>
+                    <div class="promo__item">
+                        <img src="icons/promo-icon2.png" alt="лед премиум качества" class="promo__item-img">
+                        <div class="promo__item-descr">Лед премиум качества для любой задачи</div>
+                    </div>
+                    <div class="promo__item">
+                        <img src="icons/promo-icon3.png" alt="лед из фильтрованной воды" class="promo__item-img">
+                        <div class="promo__item-descr">Правильное производство, хранение и доставка</div>
+                    </div>
+                    <div class="promo__item">
+                            <img src="icons/promo-icon4.png" alt="любой объем"  class="promo__item-img">
+                        <div class="promo__item-descr">Заказ любого объема льда</div>
+                    </div>
+                </div>
+                <button class="button">Бесплатная консультация</button>
+           </div>
+        </div>
+    </section>
+
+    <section class="numbers">
+        <div class="container">
+            <div class="numbers__items">
+                <div class="numbers__item">
+                    <div class="numbers__item-head">24/7</div>
+                    <div class="numbers__item-text">Принимаем заказы online через сайт или в мессенджерах </div>
+                </div>
+                <div class="numbers__item">
+                    <div class="numbers__item-head">3 ч.</div>
+                    <div class="numbers__item-text">Среднее время доставки по Минску в рабочее время</div>
+                </div>
+                <div class="numbers__item">
+                    <div class="numbers__item-head">10 кг.</div>
+                    <div class="numbers__item-text">Минимально возможный объем продукции для заказа</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="production">
+        <div class="container">
+            <div class="production__block"></div>
+            <div class="production__wrapper">
+                
+                <figure class="production__img">
+                    <img src="img/production_img.png" alt="Фото продукции">
+                </figure>
+
+                <div class="production__descr">
+
+                    <div class="production__item">
+                        <h2 class="production__title production__title_line1">Производство</h2>
+                        <p class="production__text">Пищевой лед производится на современном оборудовании из воды, которая прошла многоступенчатую систему очистки и смягчения.</p>
+                    </div>
+
+                    <div class="production__item">
+                        <h2 class="production__title production__title_line2">Качество</h2>
+                        <p class="production__text">Готовый продукт – это идеально прозрачный экологически-чистый лед без примесей, посторонних вкусов и запахов.</p>
+                    </div>
+
+                    <div class="production__item">
+                        <h2 class="production__title production__title_line3">Сервис</h2>
+                        <p class="production__text">Мы осуществляем оперативную доставку. Продукт фасуется в пакеты. Автомобили оборудованы холодильными установками.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+               <div class="footer__block"></div>
+               <div class="footer__block"></div>
+               <div class="footer__block"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
