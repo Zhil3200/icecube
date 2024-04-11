@@ -1,0 +1,30 @@
+.recomend {
+    --size: 50px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: calc(100% - var(--size));
+        background-color: $lightblue-color;
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 95px;
+        align-items: flex-end;
+    }
+    &__info {
+        max-width: 400px;
+        padding-top: var(--size);
+        align-self: center;
+    }
+    &__descr {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
