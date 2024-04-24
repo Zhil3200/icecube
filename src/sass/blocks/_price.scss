@@ -1,7 +1,6 @@
 .price {
-    padding: var(--padding-big);
     padding-top: 0;
-    background: url('../img/price_bg.svg') center center/cover no-repeat;
+    background: url(../img/price_bg.svg) right center / contain repeat-x;
     &__wrapper {
         margin-top: -50px;
         padding: 40px;

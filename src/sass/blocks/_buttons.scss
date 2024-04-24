@@ -9,6 +9,7 @@
     width: 268px;
     border-radius: 5px;
     transition: $transit;
+    display: block;
     &:hover {
         background: linear-gradient(134deg, #deb319 2.08%, #ffd90f 27.68%, #f6c209 69.27%, #fdbe1c 100%);
         box-shadow: 0 4px 18px 0 #aa7a00bf;

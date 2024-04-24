@@ -1,14 +1,32 @@
 .footer {
     margin-top: auto;
     padding: 50px 0;
-    background-color: $deepblue-color;
+    background: url('../img/footer_bg.jpg') center center/cover no-repeat;
+    color: $lightblue-color;
+    font-weight: 400;
     &__wrapper {
         display: grid;
-        grid-template: 1fr / repeat(3, 1fr);
-        gap: 30px
+        grid-template-columns: 2fr 1fr;
+        gap: 60px
     }
-    &__block {
-        background-color: red;
-        min-height: 200px;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__contacts {
+        margin-top: 30px;
+    }
+    &__accent {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &__link {
+        margin-right: 10px;
+    }
+    .message-link {
+        img {
+            width: 30px;
+        }
     }
 }

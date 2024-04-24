@@ -9,25 +9,30 @@
 </head>
 
 <body>
-    <header class="header">
-            <div class="container">
-                
-                <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
 
+    <header class="header">
+        <div class="container">
+
+            <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+
+            <div class="header__wrapper">
                 <nav class="header__menu">
                     <ul class="header__menu-list">
-                        <li class="header__menu-item"><a href="#">Преимущества</a></li>
-                        <li class="header__menu-item"><a href="#">Как заказать</a></li>
-                        <li class="header__menu-item"><a href="#">Цены</a></li>
-                        <li class="header__menu-item"><a href="#">Оплата и доставка</a></li>
+                        <li class="header__menu-item"><a href="#production">Преимущества</a></li>
+                        <li class="header__menu-item"><a href="#steps">Как заказать</a></li>
+                        <li class="header__menu-item"><a href="#price">Цены</a></li>
+                        <li class="header__menu-item"><a href="#conditions">Оплата и доставка</a></li>
                     </ul>
                 </nav>
 
                 <div class="header__contacts">
                     <div>
-                        <a href="#" class="header__message-link"><img src="icons/whatsapp.svg" alt="whatsapp" title="Написать в WhatsApp"></a>
-                        <a href="#" class="header__message-link"><img src="icons/viber.svg" alt="viber" title="Написать в Viber"></a>
-                        <a href="#" class="header__message-link"><img src="icons/telegram.svg" alt="telegram" title="Написать в Telegram"></a>
+                        <a href="#" class="message-link"><img src="icons/whatsapp.svg" alt="whatsapp"
+                                title="Написать в WhatsApp"></a>
+                        <a href="#" class="message-link"><img src="icons/viber.svg" alt="viber"
+                                title="Написать в Viber"></a>
+                        <a href="#" class="message-link"><img src="icons/telegram.svg" alt="telegram"
+                                title="Написать в Telegram"></a>
                     </div>
 
                     <div class="header__phone">
@@ -36,17 +41,20 @@
 
                     <button class="header__button">Заказать звонок</button>
                 </div>
-
-                <button class="mobile-btn">
-                    <span class="mobile-btn__icon"></span>
-                </button>
-
             </div>
+            <a href="#" class="header__mobile-phone">
+                <img src="icons/phone-volume_icon.svg" alt="">
+            </a>
+            <button class="mobile-btn">
+                <span class="mobile-btn__icon"></span>
+            </button>
+
+        </div>
     </header>
 
     <section class="promo">
         <div class="container">
-           <div class="promo__wrapper">
+            <div class="promo__wrapper">
                 <h1 class="promo__title">Профессиональный пищевой лед от производителя</h1>
                 <div class="promo__subtitle">в Минске <span>от 1,4 Br за кг.</span></div>
                 <div class="promo__text">Мы предлагаем:</div>
@@ -64,12 +72,12 @@
                         <div class="promo__item-descr">Правильное производство, хранение и доставка</div>
                     </div>
                     <div class="promo__item">
-                            <img src="icons/promo-icon4.png" alt="любой объем"  class="promo__item-img">
+                        <img src="icons/promo-icon4.png" alt="любой объем" class="promo__item-img">
                         <div class="promo__item-descr">Заказ любого объема льда</div>
                     </div>
                 </div>
-                <button class="button">Бесплатная консультация</button>
-           </div>
+                <a href="#order" class="button">Бесплатная консультация</a>
+            </div>
         </div>
     </section>
 
@@ -92,11 +100,11 @@
         </div>
     </section>
 
-    <section class="production">
+    <section class="production" id="production">
         <div class="container">
             <div class="production__block"></div>
             <div class="production__wrapper">
-                
+
                 <figure class="production__img">
                     <img src="img/production_img.png" alt="Фото продукции">
                 </figure>
@@ -105,17 +113,20 @@
 
                     <div class="production__item">
                         <h2 class="production__title production__title_line1">Производство</h2>
-                        <p class="production__text">Пищевой лед производится на современном оборудовании из воды, которая прошла многоступенчатую систему очистки и смягчения.</p>
+                        <p class="production__text">Пищевой лед производится на современном оборудовании из воды,
+                            которая прошла многоступенчатую систему очистки и смягчения.</p>
                     </div>
 
                     <div class="production__item">
                         <h2 class="production__title production__title_line2">Качество</h2>
-                        <p class="production__text">Готовый продукт – это идеально прозрачный экологически-чистый лед без примесей, посторонних вкусов и запахов.</p>
+                        <p class="production__text">Готовый продукт – это идеально прозрачный экологически-чистый лед
+                            без примесей, посторонних вкусов и запахов.</p>
                     </div>
 
                     <div class="production__item">
                         <h2 class="production__title production__title_line3">Сервис</h2>
-                        <p class="production__text">Мы осуществляем оперативную доставку. Продукт фасуется в пакеты. Автомобили оборудованы холодильными установками.</p>
+                        <p class="production__text">Мы осуществляем оперативную доставку. Продукт фасуется в пакеты.
+                            Автомобили оборудованы холодильными установками.</p>
                     </div>
 
                 </div>
@@ -124,7 +135,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
 
             <div class="price__wrapper">
@@ -136,31 +147,31 @@
                     <div class="price__item">
                         <div class="price__item-info">
                             <h3 class="price__title">Стандарт</h3>
-                            <div class="price__price">5 000 €</div>
+                            <div class="price__price">2 BYN/кг.</div>
                         </div>
                         <div>
                             <p class="price__descr">
-                                Полное сопровождение от проверки документов до получения готового паспорта в России
-                            </p>
-                            <a href="#" class="btn-blue">Заявка на продукцию</a>
-                        </div>
-                    </div>
-                    
-                    <div class="price__item">
-                        <div class="price__item-info">
-                            <h3 class="price__title">Стандарт</h3>
-                            <div class="price__price">5 000 €</div>
-                        </div>
-                        <div>
-                            <p class="price__descr">
-                                Полное сопровождение от проверки документов до получения готового паспорта в России
+                                Заказ от 1 кг. Платная доставка продукции.
                             </p>
                             <a href="#" class="btn-blue">Заявка на продукцию</a>
                         </div>
                     </div>
 
-                    <div class="price__item price__item_accent">
-                        
+                    <div class="price__item">
+                        <div class="price__item-info">
+                            <h3 class="price__title">Оптимальный</h3>
+                            <div class="price__price">1.4 BYN/кг.</div>
+                        </div>
+                        <div>
+                            <p class="price__descr">
+                                Заказ от 10 кг. Бесплатная приоритетная доставка по Минску.
+                            </p>
+                            <a href="#" class="btn-blue">Заявка на продукцию</a>
+                        </div>
+                    </div>
+
+                    <div class="price__item price__item_accent" id="conditions">
+
                         <div class="price__item-info">
                             <h3 class="price__title">Условия</h3>
                         </div>
@@ -170,8 +181,8 @@
                                 Оплата и доставка нашей продукции:
                             </p>
                             <ul class="price__list">
-                                <li class="price__list-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, aut. Delectus magni rerum quasi! Facere reprehenderit deserunt fugiat ipsa, accusamus tempora eaque at, mollitia ut, laborum excepturi illum dolor qui!</li>
-                                <li class="price__list-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, aut. Delectus magni rerum quasi! Facere reprehenderit deserunt fugiat ipsa, accusamus tempora eaque at, mollitia ut, laborum excepturi illum dolor qui!</li>
+                                <li class="price__list-item">Оплата продукции. Работает с физическими и юридическими лицами. Любой способ оплаты: наличный, безналичный, банковский перевод. Предоставляем закрывающие документы.</li>
+                                <li class="price__list-item">Доставка продукции. Наш менеджер согласовывает время и адрес доставки. При заказе по пакету "Оптимальный" - доставка по Минску бесплатная. Стоимость доставки в другие населенные пункты уточняйте дополнительно.</li>
                             </ul>
                             <a href="#" class="button">Заявка на продукцию</a>
                         </div>
@@ -184,44 +195,98 @@
         </div>
     </section>
 
-    <section class="steps">
+    <section class="steps" id="steps">
         <div class="container">
             <h2 class="title">Этапы работы</h2>
-            
-            <div class="steps__item">
-                <div class="steps__name">
-                    <div class="steps__number">1</div>
-                    <h3 class="steps__title">Заявка</h3>
-                </div>
-                <div class="steps__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur voluptatem et inventore earum numquam. Quaerat atque impedit saepe odio, ducimus nesciunt asperiores repellat amet nisi. Dolore facere nihil quas.</div>
-            </div>
 
             <div class="steps__item">
                 <div class="steps__name">
                     <div class="steps__number">1</div>
                     <h3 class="steps__title">Заявка</h3>
                 </div>
-                <div class="steps__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur voluptatem et inventore earum numquam. Quaerat atque impedit saepe odio, ducimus nesciunt asperiores repellat amet nisi. Dolore facere nihil quas.</div>
+                <div class="steps__descr">Оставляйте заявку на нашу продукцию любым удобным для вас способом: по телефону, электронной почте, через онлайн форму на сайте или в мессенджерах.</div>
             </div>
+
             <div class="steps__item">
                 <div class="steps__name">
                     <div class="steps__number">2</div>
+                    <h3 class="steps__title">Консультация</h3>
+                </div>
+                <div class="steps__descr">Наш менеджер проведет подробную консультацию, ответит на все ваши вопросы. Согласует объем заказа, сроки поставки, адрес доставки и удобный для вас способ оплаты.</div>
+            </div>
+            <div class="steps__item">
+                <div class="steps__name">
+                    <div class="steps__number">4</div>
+                    <h3 class="steps__title">Оплата</h3>
+                </div>
+                <div class="steps__descr">Вы оплачиваете заказанную продукцию удобным для вас способом.</div>
+            </div>
+            <div class="steps__item">
+                <div class="steps__name">
+                    <div class="steps__number">5</div>
+                    <h3 class="steps__title">Доставка</h3>
+                </div>
+                <div class="steps__descr">Мы доставляем лёд по вашему адресу согласно согласованную времени и объему.</div>
+            </div>
+            <div class="steps__item">
+                <div class="steps__name">
+                    <div class="steps__number">?</div>
                     <h3 class="steps__title">Хотите задать вопрос?</h3>
                 </div>
-                <a href="#" class="btn-blue">Бесплатная консультация</a>
+                <a href="#" class="btn-blue">Заказать звонок</a>
             </div>
 
         </div>
     </section>
 
+    <section class="order" id="order">
+        <div class="container">
+            <div class="order__container">
+                <div class="order__info">
+                    <div class="order__header">
+                        <img src="img/order__phone-icon.png" alt="">
+                        <h3 class="order__title">Получите бесплатную консультацию специалиста по продажам льда
+                        </h3>
+                    </div>
+                    <ul class="order__list">
+                        <li class="order__list-item">Расскажем все детали процесса заказа</li>
+                        <li class="order__list-item">Расскажем о ценах и объемах поставки</li>
+                        <li class="order__list-item">Согласуем дату доставки и способ оплаты</li>
+                        <li class="order__list-item">Ответим на любые дополнительные вопросы</li>
+                    </ul>
+                </div>
+                <div class="order__consultation">
+
+                    <div class="order__manager">
+                        <div class="order__manager-photo"></div>
+                        <div>
+                            <div class="order__manager-message">Пожалуйста, укажите контактные данные и менеджер
+                                свяжется с Вами в ближайшее время!</div>
+                            <div class="order__manager-descr">Ваш личный консультант по вопросам оформления заказа</div>
+                        </div>
+                    </div>
+
+                    <form action="#" class="order-form">
+                        <input type="text" class="order-form__input" required placeholder="Как к Вам обращаться?">
+                        <input type="text" class="order-form__input" required placeholder="Ваш номер телефона">
+                        <button class="button order-form__button">Получить консультацию</button>
+                        <span class="order-form__descr">Мы не передаем Ваши данные третьим лицам и не рассылаем
+                            спам.</span>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="recomend">
         <div class="container recomend__container">
-            <img src="img/Lazar-1.png" alt="">
+            <img src="img/Lazar-1.png" alt="фото бармена">
             <div class="recomend__info">
-                <h2 class="title">Рекомендация от главного 
-                    бармена города Минска</h2>
+                <h2 class="title">Рекомендация от бармена из Минска</h2>
                 <p class="recomend__descr">
-                    Господин Берл Лазар высоко оценил качество наших услуг в оказании содействия по получению израильского гражданства российским евреям и их семьям.
+                    Сложно переоценить роль льда в заведениях общепита. Лед охлаждает, сохраняет свежесть продуктов, служит украшением. Поэтому я всегда с удовольствием использую продукцию IceCUBE. Качество всегда на высоте по демократичной цене! Условия и скорость доставки - на высоте! Рекомендую!
                 </p>
             </div>
         </div>
@@ -230,9 +295,37 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-               <div class="footer__block"></div>
-               <div class="footer__block"></div>
-               <div class="footer__block"></div>
+                <div class="footer__info">
+                    <a href="#" class="logo"><img src="img/logo-white.png" alt="logo"></a>
+                    <p>Профессиональный пищевой лед от производителя
+                        в Минске. Пищевой лед производится на современном оборудовании из воды, которая прошла многоступенчатую систему очистки и смягчения.</p>
+                    <p>Все права защищены © 2024</p>
+                </div>
+                <div>
+                    <h4>Контакты</h4>
+                    <div class="footer__contacts">
+
+                        <p>
+                            <span class="footer__accent">Адрес:</span> ипдлавьтжалижпавилпжвлипап
+                        </p>
+                        <p>
+                            <span class="footer__accent">Телефон:</span> ипдлавьтжалижпавилпжвлипап
+                        </p>
+                        <p>
+                            <span class="footer__accent">Email:</span> ипдлавьтжалижпавилпжвлипап
+                        </p>
+
+                        <div>
+                            <span class="footer__accent footer__link">Мессенджеры:</span> 
+                            <a href="#" class="message-link"><img src="icons/whatsapp.svg" alt="whatsapp"
+                                    title="Написать в WhatsApp"></a>
+                            <a href="#" class="message-link"><img src="icons/viber.svg" alt="viber"
+                                    title="Написать в Viber"></a>
+                            <a href="#" class="message-link"><img src="icons/telegram.svg" alt="telegram"
+                                    title="Написать в Telegram"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

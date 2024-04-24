@@ -1,0 +1,80 @@
+.order {
+    padding: var(--padding-container);
+    &__container {
+        border: 4px solid $blue-color;
+        border-radius: 5px;
+        padding: 50px 30px;
+        display: flex;
+    }
+    &__info {
+        max-width: 500px;
+        border-right: 1px solid $blue-color;
+        padding-right: 15px;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        img {
+            margin-right: 15px;
+        }
+    }
+    &__title {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    &__list {
+        list-style: none;
+        padding-left: 67px;
+        margin: 0;
+        &-item {
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 19px;
+            }
+            &:before {
+                content: url("../icons/order__check-icon.svg");
+                position: absolute;
+                left: -30px;
+            }
+        }
+    }
+    &__consultation {
+        max-width: 550px;
+        padding-left: 40px;
+    }
+    &__manager {
+        display: flex;
+        align-items:center;
+        margin-bottom: 40px;
+        &-photo {
+            width: 90px;
+            height: 90px;
+            flex-shrink: 0;
+            background: url('../img/order__form-manager.png') center center no-repeat #0065b1;
+            mask-image: url('../icons/order__polygon.svg#c1');
+            mask-repeat: no-repeat;
+            mask-position: center center;
+        }
+        &-message {
+            position: relative;
+            margin-left: 15px;
+            background: linear-gradient(314deg, #8b81fa 33.42%, #2072ec 100%);
+            padding: 20px;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: #fff;
+            &::before {
+                content: url("../icons/order__message-icon.png");
+                position: absolute;
+                left: -4px;
+                bottom: -3px;
+            }
+        }
+        &-descr {
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
+}

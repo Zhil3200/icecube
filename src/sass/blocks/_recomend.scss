@@ -9,7 +9,7 @@
         z-index: -1;
         width: 100%;
         height: calc(100% - var(--size));
-        background-color: $lightblue-color;
+        background: url('../img/numbers_bg.svg') right center / cover no-repeat $lightblue-color;
     }
     &__container {
         display: flex;

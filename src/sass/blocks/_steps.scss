@@ -2,7 +2,7 @@
     padding: var(--padding-container);
     &__item {
         display: flex;
-        align-items: start;
+        align-items: center;
         gap: 50px;
         padding: 40px 0;
         &:not(:last-child) {
