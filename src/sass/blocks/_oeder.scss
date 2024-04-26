@@ -11,18 +11,6 @@
         border-right: 1px solid $blue-color;
         padding-right: 15px;
     }
-    &__header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        img {
-            margin-right: 15px;
-        }
-    }
-    &__title {
-        font-size: 22px;
-        line-height: 1.2;
-    }
     &__list {
         list-style: none;
         padding-left: 67px;
@@ -51,10 +39,7 @@
             width: 90px;
             height: 90px;
             flex-shrink: 0;
-            background: url('../img/order__form-manager.png') center center no-repeat #0065b1;
-            mask-image: url('../icons/order__polygon.svg#c1');
-            mask-repeat: no-repeat;
-            mask-position: center center;
+            background: url('../icons/mask-icon.png') center center no-repeat;
         }
         &-message {
             position: relative;

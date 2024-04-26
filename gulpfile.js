@@ -51,7 +51,7 @@ gulp.task('serverdist', function() {
 
 gulp.task('html', function() {
     return gulp.src("src/*.html")
-        .pipe(webpHTML())
+        // .pipe(webpHTML())
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
@@ -61,7 +61,7 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
     return gulp.src("src/css/*.css")
-        .pipe(webpCSS())
+        // .pipe(webpCSS())
         .pipe(cleanCSS({level: {1: { specialComments: 0}}}))
         .pipe(gulp.dest("dist/css"));
 });
@@ -78,7 +78,7 @@ gulp.task('fonts', function() {
 
 gulp.task('icons', function() {
     return gulp.src(["src/icons/**/*", "!src/icons/favicon/*"])
-        .pipe(webp())
+        // .pipe(webp())
         .pipe(gulp.dest("dist/icons"))
         .pipe(gulp.src("src/icons/**/*"))
         .pipe(gulp.dest("dist/icons"));
@@ -91,7 +91,7 @@ gulp.task('mailer', function() {
 
 gulp.task('images', function() {
     return gulp.src("src/img/**/*")
-        .pipe(webp())
+        // .pipe(webp())
         .pipe(gulp.dest("dist/img"))
         .pipe(gulp.src("src/img/**/*"))
         .pipe(imagemin())

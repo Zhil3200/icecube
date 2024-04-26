@@ -1,0 +1,42 @@
+.overlay {
+    position: fixed;
+    display: none;
+    inset: 0;
+    background-color: rgba(56, 56, 56, 0.9);
+    z-index: 100;
+    &__wrapper {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        border: 2px solid #b3d8f2;
+        border-radius: 5px;
+        padding: 50px;
+        max-width: 600px;
+        max-height: 90%;
+        overflow-y: auto;
+    }
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: transparent;
+        border: 2px solid $deepblue-color;
+        color: $deepblue-color;
+        border-radius: 50%;
+        transition: $transit;
+        &:hover {
+            color: red;
+            border-color: red;
+        }
+        
+    }
+    &__succses {
+        text-align: center;
+    }
+    &_open {
+        display: flex;
+    }
+}

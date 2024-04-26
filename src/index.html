@@ -4,7 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шаблон проекта с БЭМ</title>
+    <meta name="description" content="Профессиональный пищевой лед от производителя
+    в Минске по выгодным ценам. Бесплатная доставка, любой способ оплаты. Заказывайте online на сайте!" />
+    <title>Профессиональный пищевой лед от производителя</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -39,7 +60,7 @@
                         <a href="#">+375 (29) 999-99-99</a>
                     </div>
 
-                    <button class="header__button">Заказать звонок</button>
+                    <button class="header__button" data-modal="order-call">Заказать звонок</button>
                 </div>
             </div>
             <a href="#" class="header__mobile-phone">
@@ -125,8 +146,7 @@
 
                     <div class="production__item">
                         <h2 class="production__title production__title_line3">Сервис</h2>
-                        <p class="production__text">Мы осуществляем оперативную доставку. Продукт фасуется в пакеты.
-                            Автомобили оборудованы холодильными установками.</p>
+                        <p class="production__text">Мы осуществляем оперативную доставку. Продукт фасуется в пакеты по 10кг. Доставка по адресу при заказе от 2 пакетов.</p>
                     </div>
 
                 </div>
@@ -147,13 +167,13 @@
                     <div class="price__item">
                         <div class="price__item-info">
                             <h3 class="price__title">Стандарт</h3>
-                            <div class="price__price">2 BYN/кг.</div>
+                            <div class="price__price">1.6 BYN/кг.</div>
                         </div>
                         <div>
                             <p class="price__descr">
-                                Заказ от 1 кг. Платная доставка продукции.
+                                Минимальный заказ от 2 пакетов льда (1 пакет 10 кг., тип льда - кубики). Бесплатная доставка по Минску.
                             </p>
-                            <a href="#" class="btn-blue">Заявка на продукцию</a>
+                            <button class="btn-blue" data-modal="order-product">Заявка на продукцию</button>
                         </div>
                     </div>
 
@@ -164,9 +184,9 @@
                         </div>
                         <div>
                             <p class="price__descr">
-                                Заказ от 10 кг. Бесплатная приоритетная доставка по Минску.
+                                Заказ от 4 пакетов льда (1 пакет 10 кг., тип льда - кубики). Бесплатная приоритетная доставка по Минску.
                             </p>
-                            <a href="#" class="btn-blue">Заявка на продукцию</a>
+                            <button class="btn-blue" data-modal="order-product">Заявка на продукцию</button>
                         </div>
                     </div>
 
@@ -182,9 +202,9 @@
                             </p>
                             <ul class="price__list">
                                 <li class="price__list-item">Оплата продукции. Работает с физическими и юридическими лицами. Любой способ оплаты: наличный, безналичный, банковский перевод. Предоставляем закрывающие документы.</li>
-                                <li class="price__list-item">Доставка продукции. Наш менеджер согласовывает время и адрес доставки. При заказе по пакету "Оптимальный" - доставка по Минску бесплатная. Стоимость доставки в другие населенные пункты уточняйте дополнительно.</li>
+                                <li class="price__list-item">Доставка продукции. Наш менеджер согласовывает время и адрес доставки. Минимальный заказ продукции 2 пакета по 10кг. - доставка по Минску бесплатная. Стоимость и сроки доставки в другие населенные пункты уточняйте дополнительно.</li>
                             </ul>
-                            <a href="#" class="button">Заявка на продукцию</a>
+                            <button class="button"  data-modal="order-product">Заявка на продукцию</button>
                         </div>
 
                     </div>
@@ -226,14 +246,14 @@
                     <div class="steps__number">5</div>
                     <h3 class="steps__title">Доставка</h3>
                 </div>
-                <div class="steps__descr">Мы доставляем лёд по вашему адресу согласно согласованную времени и объему.</div>
+                <div class="steps__descr">Мы доставляем лёд по вашему адресу согласно согласованному времени и объему. Минимальный заказ 2 пакета по 10 кг. Бесплатная доставка по Минску.</div>
             </div>
             <div class="steps__item">
                 <div class="steps__name">
                     <div class="steps__number">?</div>
                     <h3 class="steps__title">Хотите задать вопрос?</h3>
                 </div>
-                <a href="#" class="btn-blue">Заказать звонок</a>
+                <button href="#" class="btn-blue" data-modal="order-call">Заказать звонок</button>
             </div>
 
         </div>
@@ -243,9 +263,9 @@
         <div class="container">
             <div class="order__container">
                 <div class="order__info">
-                    <div class="order__header">
+                    <div class="order-header">
                         <img src="img/order__phone-icon.png" alt="">
-                        <h3 class="order__title">Получите бесплатную консультацию специалиста по продажам льда
+                        <h3 class="order-header__title">Получите бесплатную консультацию специалиста по продажам льда
                         </h3>
                     </div>
                     <ul class="order__list">
@@ -267,13 +287,12 @@
                     </div>
 
                     <form action="#" class="order-form">
-                        <input type="text" class="order-form__input" required placeholder="Как к Вам обращаться?">
-                        <input type="text" class="order-form__input" required placeholder="Ваш номер телефона">
+                        <input name="name" type="text" class="order-form__input" required placeholder="Как к Вам обращаться?">
+                        <input name="phone" type="text" class="order-form__input" required placeholder="Ваш номер телефона">
                         <button class="button order-form__button">Получить консультацию</button>
                         <span class="order-form__descr">Мы не передаем Ваши данные третьим лицам и не рассылаем
                             спам.</span>
                     </form>
-
 
                 </div>
             </div>
@@ -305,9 +324,9 @@
                     <h4>Контакты</h4>
                     <div class="footer__contacts">
 
-                        <p>
+                        <adress>
                             <span class="footer__accent">Адрес:</span> ипдлавьтжалижпавилпжвлипап
-                        </p>
+                        </adress>
                         <p>
                             <span class="footer__accent">Телефон:</span> ипдлавьтжалижпавилпжвлипап
                         </p>
@@ -330,6 +349,51 @@
         </div>
     </footer>
 
+    <section class="overlay" id="order-call">
+        <div class="overlay__wrapper">
+            <button class="overlay__close">&#10006;</button>
+            <div class="order-header">
+                <img src="img/order__phone-icon.png" alt="">
+                <h3 class="order-header__title">Отсавьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время!</h3>
+            </div>
+            <form action="#" class="order-form">
+                <input name="name" type="text" class="order-form__input" required placeholder="Как к Вам обращаться?">
+                <input name="phone" type="text" class="order-form__input" required placeholder="Ваш номер телефона">
+                <button class="button order-form__button">Заказать звонок</button>
+                <span class="order-form__descr">Мы не передаем Ваши данные третьим лицам и не рассылаем
+                    спам.</span>
+            </form>
+        </div>
+    </section>
+
+    <section class="overlay" id="order-production">
+        <div class="overlay__wrapper">
+            <button class="overlay__close">&#10006;</button>
+            <div class="order-header">
+                <img src="img/order__phone-icon.png" alt="">
+                <h3 class="order-header__title">Отсавьте свои коонтактные данные для предвариетльного заказа продукции!</h3>
+            </div>
+            <form action="#" class="order-form">
+                <input name="name" type="text" class="order-form__input" required placeholder="Как к Вам обращаться?">
+                <input name="phone" type="text" class="order-form__input" required placeholder="Ваш номер телефона">
+                <input name="size" type="text" class="order-form__input" required placeholder="Нужный объем льда">
+                <input name="adress" type="text" class="order-form__input" required placeholder="Адрес доставки льда">
+                <button class="button order-form__button">Отправить заявку</button>
+                <span class="order-form__descr">Мы не передаем Ваши данные третьим лицам и не рассылаем
+                    спам.</span>
+            </form>
+        </div>
+    </section>
+
+    <section class="overlay" id="order-thanks">
+        <div class="overlay__wrapper">
+            <button class="overlay__close">&#10006;</button>
+            <h3 class="overlay__succses">Заявка отправлена успешно! Наш менеджер свяжется с вами в ближайшее время!</h3>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

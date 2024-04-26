@@ -130,6 +130,7 @@
         }
     }
     .price {
+        background: url(../img/price_bg.svg) center center / cover no-repeat;
         &__wrapper {
             padding: 20px;
         }
@@ -236,9 +237,6 @@
         }
     }
     .order {
-        &__title {
-            font-size: 16px;
-        }
         &__list {
             padding-left: 30px;
         }
@@ -258,6 +256,11 @@
             }
         } 
     }
+    .order-header {
+        &__title {
+            font-size: 16px;
+        }
+    }
     .recomend {
         img {
             max-width: 100%;
@@ -266,6 +269,11 @@
     .footer {
         &__info {
             max-width: 100%;
+        }
+    }
+    .overlay {
+        &__wrapper {
+            padding: 20px;
         }
     }
 }
