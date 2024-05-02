@@ -1,69 +1,33 @@
-window.addEventListener('DOMContentLoaded', () => {
+$( document ).ready(function() {
 
-    const navBtn = document.querySelector('.mobile-btn'),
-    menuItem = document.querySelectorAll('.header__menu-item'),
-    nav = document.querySelector('.header__wrapper');
+    const navBtn = $('.mobile-btn'),
+    menuItem = $('.header__menu-item'),
+    nav = $('.header__wrapper');
 
-    navBtn.addEventListener('click', () => {
-        navBtn.classList.toggle('mobile-btn_open');
-        nav.classList.toggle('header__wrapper_open');
-        document.body.classList.toggle('no-scroll');
+    function removeMenu() {
+        navBtn.removeClass('mobile-btn_open');
+        nav.removeClass('header__wrapper_open');
+    }
+
+    navBtn.on('click', function() {
+        navBtn.toggleClass('mobile-btn_open');
+        nav.toggleClass('header__wrapper_open');
+        $(document.body).toggleClass('no-scroll');
     });
 
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            navBtn.classList.toggle('mobile-btn_open');
-            nav.classList.toggle('header__wrapper_open');
-            document.body.classList.toggle('no-scroll');
-        })
+    menuItem.on('click', function() {
+        removeMenu();
+        $(document.body).removeClass('no-scroll');
     });
-
-    // const callButton = document.querySelectorAll('[data-modal=order-call]'),
-    // productButton = document.querySelectorAll('[data-modal=order-product]'),
-    // overlay = document.querySelectorAll('.overlay'),
-    // modalClose = document.querySelectorAll('.overlay__close');
-
-    // callButton.forEach(item => {
-    //     item.addEventListener('click', () => {
-    //         overlay[0].classList.toggle('overlay_open');
-    //         document.body.classList.toggle('no-scroll');
-    //     });
-    // });
-    // productButton.forEach(item => {
-    //     item.addEventListener('click', () => {
-    //         overlay[1].classList.toggle('overlay_open');
-    //         document.body.classList.toggle('no-scroll');
-    //     });
-    // });
-    // modalClose.forEach(item => {
-    //     item.addEventListener('click', () => {
-    //         overlay[0].classList.remove('overlay_open');
-    //         overlay[1].classList.remove('overlay_open');
-    //         overlay[2].classList.remove('overlay_open');
-    //         document.body.classList.toggle('no-scroll');
-    //     });
-    // });
-
-    // const forms = document.querySelectorAll('.order-form');
-
-    // forms[1].addEventListener('submit', (e) => {
-    //     e.preventDefault();
-    //     e.currentTarget.querySelectorAll('input').forEach(function(field){
-    //         console.log(field.name+"="+field.value);
-    //     });
-    //     e.target.reset();
-    //     overlay[0].classList.remove('overlay_open');
-    //     overlay[1].classList.remove('overlay_open');
-    //     overlay[2].classList.toggle('overlay_open');
-    // });
 
     $('[data-modal=order-call]').on('click', function() {
         $('#order-call').fadeIn('slow');
-        $(document.body).toggleClass('no-scroll');
+        $(document.body).addClass('no-scroll');
+        removeMenu();
     });
     $('[data-modal=order-product]').on('click', function() {
         $('#order-production').fadeIn('slow');
-        $(document.body).toggleClass('no-scroll');
+        $(document.body).addClass('no-scroll');
     });
     $('.overlay__close').on('click', function() {
         $('#order-call, #order-production, #order-thanks').fadeOut('slow');
@@ -92,11 +56,16 @@ window.addEventListener('DOMContentLoaded', () => {
             $(this).trigger('reset');
         });
     }
-    
+
     sendForm(forms[0], false);
     sendForm(forms[1]);
     sendForm(forms[2]);
-    
 
+    $('input[name=phone]').mask("+375 (99) 999-99-99");
+
+    new WOW(
+        {offset:200,
+        animateClass: 'animate__animated'}
+    ).init();
 
 });
